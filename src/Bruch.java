@@ -38,7 +38,7 @@ public class Bruch {
                 this.nenner * b2.getNenner());
     }
 
-    public Bruch multipicate(Bruch b2, Bruch b3){
+    public Bruch multiplicate(Bruch b2, Bruch b3){
         int zaehler_neu = this.zaehler * b2.getZaehler() * b3.getZaehler();
         int nenner_neu = this.nenner * b2.getNenner() * b3.getNenner();
 

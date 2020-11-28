@@ -17,7 +17,7 @@ public class DemoBruchApp {
         erg2.print();
 
 
-        Bruch erg3 = b1.multipicate(dreiViertel, fuenfSechstel);
+        Bruch erg3 = b1.multiplicate(dreiViertel, fuenfSechstel);
         erg3.print();
 
     }
