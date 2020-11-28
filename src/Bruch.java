@@ -1,10 +1,16 @@
 public class Bruch {
     private int nenner;
     private int zaehler;
+    public static int countBrueche;
 
     public Bruch(int zaehler, int nenner) {
         this.nenner = nenner;
         this.zaehler = zaehler;
+        countBrueche++;
+    }
+
+    public static void printCountBrueche(){
+        System.out.println("Statischer Count: " + countBrueche);
     }
 
     public int getNenner() {
@@ -45,7 +51,7 @@ public class Bruch {
         return new Bruch(zaehler_neu, nenner_neu);
     }
 
-  /*  public Bruch multipicate(Bruch b2, Bruch b3){
+  /*  public Bruch multiplicate(Bruch b2, Bruch b3){
         return multiplicate(b2).multiplicate(b3);
     }*/
 }
