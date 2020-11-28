@@ -1,12 +1,10 @@
 public class KontoDemoApp {
     public static void main(String[] args) {
 
-        Konto kontoMax = new Konto();
-        kontoMax.setKontoInhaber("Max Mustermann");
+        Konto kontoMax = new Konto("Max Mustermann");
         kontoMax.aufbuchen(1000);
 
-        Konto kontoSusi = new Konto();
-        kontoSusi.setKontoInhaber("Susi Sorglos");
+        Konto kontoSusi = new Konto("Susi Sorglos");
         kontoSusi.aufbuchen(2_000);
 
         kontoMax.print();
@@ -22,5 +20,16 @@ public class KontoDemoApp {
         kontoSusi.print();
 
         System.out.println("kontoSusi.getKontoInhaber() = " + kontoSusi.getKontoInhaber());
+
+        Konto kontoJohn = new Konto("John Doe");
+        kontoJohn.aufbuchen(50_000);
+        kontoJohn.abbuchen(100);
+        kontoJohn.print();
+
+        Konto aktionsKonto = new Konto("Franz Muster", 500);
+        aktionsKonto.aufbuchen(300);
+        aktionsKonto.print();
+
+
     }
 }

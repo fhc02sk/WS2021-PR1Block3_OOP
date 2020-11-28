@@ -2,6 +2,16 @@ public class Konto {
     private String kontoInhaber;
     private double kontostand;
 
+    public Konto(String kontoInhaber){
+        this.kontoInhaber = kontoInhaber;
+        kontostand = 0;
+    }
+
+    public Konto(String kontoInhaber, double kontostand){
+        this.kontoInhaber = kontoInhaber;
+        this.kontostand = kontostand;
+    }
+
     public void setKontoInhaber(String kontoInhaber){
         this.kontoInhaber = kontoInhaber;
         this.kontostand = 0;
