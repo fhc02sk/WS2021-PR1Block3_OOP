@@ -1,8 +1,11 @@
+package accounts;
+
 public class KontoDemoApp {
     public static void main(String[] args) {
 
         Konto kontoMax = new Konto("Max Mustermann");
         kontoMax.aufbuchen(1000);
+        kontoMax.print();
 
         Konto kontoSusi = new Konto("Susi Sorglos");
         kontoSusi.aufbuchen(2_000);
@@ -30,6 +33,8 @@ public class KontoDemoApp {
         aktionsKonto.aufbuchen(300);
         aktionsKonto.print();
 
+        kontoMax.print();
+        kontoSusi.print();
 
     }
 }

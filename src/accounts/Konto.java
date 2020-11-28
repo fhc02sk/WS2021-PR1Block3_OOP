@@ -1,15 +1,24 @@
+package accounts;
+
 public class Konto {
     private String kontoInhaber;
     private double kontostand;
+    private int kontoID;
+
+    private static int counter;
 
     public Konto(String kontoInhaber){
         this.kontoInhaber = kontoInhaber;
         kontostand = 0;
+        counter++;
+        kontoID = counter;
     }
 
     public Konto(String kontoInhaber, double kontostand){
         this.kontoInhaber = kontoInhaber;
         this.kontostand = kontostand;
+        counter++;
+        kontoID = counter;
     }
 
     public void setKontoInhaber(String kontoInhaber){
@@ -26,7 +35,9 @@ public class Konto {
     }
 
     public void print(){
-        System.out.println("Kontoinhaber: " + kontoInhaber + ": Kontostand: " + kontostand + " EUR");
+        System.out.println("KontoID: " + kontoID + ": Kontoinhaber: "
+                + kontoInhaber + ": Kontostand: " + kontostand + " EUR"
+                + ": Gesamtanzahl Konten: " + counter);
     }
 
     public void aufbuchen(double wert){

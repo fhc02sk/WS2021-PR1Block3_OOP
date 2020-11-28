@@ -1,3 +1,5 @@
+package fraction;
+
 public class Bruch {
     private int nenner;
     private int zaehler;
@@ -29,12 +31,12 @@ public class Bruch {
         System.out.println(zaehler + " / " + nenner);
     }
 
-//   public Bruch multiplicate(Bruch b2) {
+//   public fraction.Bruch multiplicate(fraction.Bruch b2) {
 //        /* 5 / 7 * 3 / 4 = 15 / 28 */
 //        int zaehler_neu = this.zaehler * b2.getZaehler();
 //        int nenner_neu = this.nenner * b2.getNenner();
 //
-//        Bruch neuerBruch = new Bruch(zaehler_neu, nenner_neu);
+//        fraction.Bruch neuerBruch = new fraction.Bruch(zaehler_neu, nenner_neu);
 //        return neuerBruch;
 //    }
 
@@ -51,7 +53,7 @@ public class Bruch {
         return new Bruch(zaehler_neu, nenner_neu);
     }
 
-  /*  public Bruch multiplicate(Bruch b2, Bruch b3){
+  /*  public fraction.Bruch multiplicate(fraction.Bruch b2, fraction.Bruch b3){
         return multiplicate(b2).multiplicate(b3);
     }*/
 }
