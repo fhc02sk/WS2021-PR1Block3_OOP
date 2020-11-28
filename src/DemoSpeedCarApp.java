@@ -3,7 +3,8 @@ public class DemoSpeedCarApp {
 
         SpeedCar sp = new SpeedCar();
         sp.colour = "red";
-        sp.currentGear = 1;
+        //sp.currentGear = 1;
+        sp.setCurrentGear(1);
         sp.currentSpeed = 0;
 
         sp.print();
@@ -28,5 +29,9 @@ public class DemoSpeedCarApp {
 
         sp.setSpeed(200);
         sp.print();
+
+        sp.setCurrentGear(99);
+        sp.print();
+        System.out.println("sp.getCurrentGear() = " + sp.getCurrentGear());
     }
 }

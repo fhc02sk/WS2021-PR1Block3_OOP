@@ -1,9 +1,19 @@
 public class SpeedCar {
     public int currentSpeed;
-    public int currentGear;
+    private int currentGear;
     public String colour;
 
+    public int getCurrentGear(){
+        return currentGear;
+    }
 
+    public void setCurrentGear(int currentGear){
+        if (currentGear >= 1 && currentGear <= 7)
+            this.currentGear = currentGear;
+        else {
+            System.out.println("Falscher Gang, erlaubt ist 1 bis 7");
+        }
+    }
 
     public void print() {
         System.out.println("Farbe: " + colour + "; CurrentGear: "
@@ -13,6 +23,7 @@ public class SpeedCar {
     // Methode, ohne Rückgabe (void), mit Parameter
     public void setSpeed(int currentSpeed){
         this.currentSpeed = currentSpeed;
+        defineBestGear();
     }
 
     // Methode, ohne Rückgabe, ohne Parameter
@@ -21,13 +32,17 @@ public class SpeedCar {
     }
 
     // Methode, mit Rückgabe (int), ohne Parameter
-    public int getGear() {
+    /*public int getGear() {
         return currentGear;
-    }
+    }*/
 
     public void accelerate(int targetSpeed) {
-
         currentSpeed = targetSpeed;
+        defineBestGear();
+    }
+
+    private void defineBestGear(){
+        // Wie, wann wir schalten
         if (currentSpeed <= 30)
             currentGear = 1;
         else if (currentSpeed <= 50)
