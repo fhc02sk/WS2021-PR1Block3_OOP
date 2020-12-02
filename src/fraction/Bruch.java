@@ -58,7 +58,15 @@ public class Bruch {
     }*/
 
     public Bruch multiplicate(Bruch[] arr){
+        int zaehler_neu = this.zaehler;
+        int nenner_neu = this.nenner;
 
+        for (int i = 0; i < arr.length; i++){
+            Bruch b2 = arr[i];
+            zaehler_neu = zaehler_neu * b2.getZaehler();
+            nenner_neu = nenner_neu * b2.getNenner();
+        }
+        return new Bruch(zaehler_neu, nenner_neu);
     }
 
 }

@@ -31,7 +31,14 @@ public class DemoBruchApp {
 
 
         Bruch erg3 = b1.multiplicate(dreiViertel, fuenfSechstel);
+        System.out.println("erg3: ");
         erg3.print();
+
+        Bruch[] arr = new Bruch[] {dreiViertel, fuenfSechstel};
+        System.out.println("erg4: ");
+        Bruch erg4 = b1.multiplicate(arr);
+        erg4.print();
+
 
         Bruch einHalb = new Bruch(1, 2);
 
