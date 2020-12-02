@@ -56,4 +56,9 @@ public class Bruch {
   /*  public fraction.Bruch multiplicate(fraction.Bruch b2, fraction.Bruch b3){
         return multiplicate(b2).multiplicate(b3);
     }*/
+
+    public Bruch multiplicate(Bruch[] arr){
+
+    }
+
 }
